@@ -63,7 +63,7 @@ test "password should have a minimum length" do
 
 
 test "authenticated? should return false fo a user with nil digest" do
-	assert_not @user.authenticated?('')
+	assert_not @user.authenticated?(:remember, '')
 end
 
 
